@@ -28,8 +28,8 @@ TLDR; I built a `learning platform` designed for `course creation` using spaced 
 ## The Course Creation Platform - FrontEnd Architecture Interview Example Course / Lessons
 <div className="my-8">
   <VideoPlayer 
-    src="/brainloop/video/bl-hebrew-course-1754422129940.mp4" 
-    title="BrainLoop - Hebrew Course"
+    src="/brainloop/video/bl-lesson-study-1754416163803.mp4" 
+    title="BrainLoop - FrontEnd Architecture Interview Course"
     poster="/brainloop/video/bl-poster-3.png"
     className="w-full max-w-4xl mx-auto"
   />

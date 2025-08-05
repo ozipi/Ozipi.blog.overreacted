@@ -13,7 +13,19 @@ technologies: ["react", "nextjs", "typescript", "mcp"]
 
 ---
 
-## The Course Creation Platform - Hebrew Course / Lessons
+TLDR; I built a `learning platform` designed for `course creation` using spaced repetition algorithms, it supports AI-generated content/videos/and custom components, offering the ability to sell courses using custom domains.
+
+## The Course Creation Platform - Hebrew Course Example / Lessons
+<div className="my-8">
+  <VideoPlayer 
+    src="/brainloop/video/bl-hebrew-course-1754422129940.mp4" 
+    title="BrainLoop - Hebrew Course"
+    poster="/brainloop/video/bl-poster-3.png"
+    className="w-full max-w-4xl mx-auto"
+  />
+</div>
+
+## The Course Creation Platform - FrontEnd Architecture Interview Example Course / Lessons
 <div className="my-8">
   <VideoPlayer 
     src="/brainloop/video/bl-hebrew-course-1754422129940.mp4" 

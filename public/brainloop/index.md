@@ -15,7 +15,37 @@ technologies: ["react", "nextjs", "typescript", "mcp"]
 
 TLDR; I built a `learning platform` designed for `course creation` using spaced repetition algorithms, it supports AI-generated content/videos/and custom components, offering the ability to sell courses using custom domains.
 
-## The Course Creation Platform - Hebrew Course Example / Lessons
+## BRAINLOOP - Create a course from Claude (MCP)
+<div className="my-8">
+  <VideoPlayer 
+    src="/brainloop/video/bl-mcp-claude-create-course-1-1754416993814.mp4" 
+    title="AI-Powered Course Creation with Claude MCP"
+    poster="/brainloop/video/bl-poster-3.png"
+    className="w-full max-w-4xl mx-auto"
+  />
+</div>
+
+## BRAINLOOP - Example Course created from Claude (MCP)
+<div className="my-8">
+  <VideoPlayer 
+    src="/brainloop/video/bl-nodejs-course-from-mcp-1754420599515.mp4" 
+    title="AI-Powered Course Creation with Claude MCP - NodeJs basic course"
+    poster="/brainloop/video/bl-poster-3.png"
+    className="w-full max-w-4xl mx-auto"
+  />
+</div>
+
+## BRAINLOOP - FrontEnd Architecture Interview Example Course / Lessons
+<div className="my-8">
+  <VideoPlayer 
+    src="/brainloop/video/bl-lesson-study-1754416163803.mp4" 
+    title="BrainLoop - FrontEnd Architecture Interview Course"
+    poster="/brainloop/video/bl-poster-3.png"
+    className="w-full max-w-4xl mx-auto"
+  />
+</div>
+
+## BRAINLOOP - Hebrew Course Example / Lessons
 <div className="my-8">
   <VideoPlayer 
     src="/brainloop/video/bl-hebrew-course-1754422129940.mp4" 
@@ -25,15 +55,6 @@ TLDR; I built a `learning platform` designed for `course creation` using spaced 
   />
 </div>
 
-## The Course Creation Platform - FrontEnd Architecture Interview Example Course / Lessons
-<div className="my-8">
-  <VideoPlayer 
-    src="/brainloop/video/bl-lesson-study-1754416163803.mp4" 
-    title="BrainLoop - FrontEnd Architecture Interview Course"
-    poster="/brainloop/video/bl-poster-3.png"
-    className="w-full max-w-4xl mx-auto"
-  />
-</div>
 
 ## The Problem That Started Everything
 
@@ -166,24 +187,6 @@ Every interface decision was guided by one principle: **make the complex feel si
 - **Intelligent Course Creation**: AI assistance for curriculum development  
 - **API-First Design**: Comprehensive REST API with authentication
 - **Real-time Collaboration**: AI and human editors working together seamlessly
-
-<div className="my-8">
-  <VideoPlayer 
-    src="/brainloop/video/bl-mcp-claude-create-course-1-1754416993814.mp4" 
-    title="AI-Powered Course Creation with Claude MCP"
-    poster="/brainloop/video/bl-poster-3.png"
-    className="w-full max-w-4xl mx-auto"
-  />
-</div>
-
-<div className="my-8">
-  <VideoPlayer 
-    src="/brainloop/video/bl-nodejs-course-from-mcp-1754420599515.mp4" 
-    title="AI-Powered Course Creation with Claude MCP - NodeJs basic course"
-    poster="/brainloop/video/bl-poster-3.png"
-    className="w-full max-w-4xl mx-auto"
-  />
-</div>
 *Watch Claude AI create entire courses through BrainLoop's MCP integration. This represents the future of collaborative content creation—where AI augments human expertise to create better learning experiences.*
 
 ### 📊 **Beautiful Analytics Dashboard**

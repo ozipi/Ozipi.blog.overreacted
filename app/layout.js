@@ -1,4 +1,5 @@
 import PlausibleProvider from "next-plausible";
+import { Analytics } from "@vercel/analytics/react";
 import Link from "./Link";
 import HomeLink from "./HomeLink";
 import { serif } from "./fonts";
@@ -49,6 +50,7 @@ export default function RootLayout({ children }) {
           <main>
             <Activity mode="visible">{children}</Activity>
           </main>
+          {process.env.NODE_ENV === 'production' && <Analytics />}
         </PlausibleProvider>
       </body>
     </html>

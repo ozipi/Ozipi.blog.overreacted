@@ -3,7 +3,7 @@ import { readdir, readFile } from "fs/promises";
 import matter from "gray-matter";
 import { MDXRemote } from "next-mdx-remote-client/rsc";
 import Link from "../Link";
-import { sans } from "../fonts";
+import { sans, display } from "../fonts";
 import remarkSmartpants from "remark-smartypants";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
@@ -12,6 +12,7 @@ import { remarkMdxEvalCodeBlock } from "./mdx.js";
 import overnight from "overnight/themes/Overnight-Slumber.json";
 import "./markdown.css";
 import remarkGfm from "remark-gfm";
+import TableOfContents from "./TableOfContents";
 
 overnight.colors["editor.background"] = "var(--code-bg)";
 
@@ -44,24 +45,27 @@ export default async function PostPage({ params }) {
 
   return (
     <>
+      <TableOfContents />
       <article className="max-w-4xl mx-auto px-4 md:px-0">
         <h1
           className={[
-            sans.className,
-            "text-[40px] font-black leading-[44px] text-[--title]",
+            display.className,
+            "text-5xl sm:text-6xl font-bold leading-tight tracking-tight text-[--text-primary] mb-4",
           ].join(" ")}
         >
           {data.title}
         </h1>
-        <p className="mt-2 text-[13px] text-gray-700 dark:text-gray-300">
-          {new Date(data.date).toLocaleDateString("en", {
-            day: "numeric",
-            month: "long",
-            year: "numeric",
-          })}
-          <span className="mx-2">·</span>
-          <span>{readTimeMinutes} min read</span>
-        </p>
+        <div className={`${sans.className} flex items-center gap-3 text-sm text-[--text-tertiary] mb-8`}>
+          <time className="font-medium">
+            {new Date(data.date).toLocaleDateString("en", {
+              day: "numeric",
+              month: "short",
+              year: "numeric",
+            })}
+          </time>
+          <span className="w-1 h-1 rounded-full bg-[--text-tertiary]"></span>
+          <span className="font-medium">{readTimeMinutes} min read</span>
+        </div>
         <div className="markdown">
           <div className="mb-8 relative md:-left-6 flex flex-wrap items-baseline">
             {/* {!isDraft && (

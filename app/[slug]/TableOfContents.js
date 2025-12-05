@@ -57,7 +57,7 @@ export default function TableOfContents() {
       className={`${sans.className} hidden xl:block fixed right-8 top-32 w-64 max-h-[calc(100vh-200px)] overflow-y-auto`}
     >
       <div className="sticky top-0 pb-4 bg-gradient-to-b from-[--bg-primary] to-transparent">
-        <h2 className="text-xs font-bold uppercase tracking-wider text-[--text-tertiary] mb-4 flex items-center gap-2">
+        <h2 className="text-xs font-bold uppercase tracking-wider text-[#ccfc14] mb-4 flex items-center gap-2">
           <span className="w-4 h-[2px] bg-gradient-to-r from-[--accent-gradient-start] to-[--accent-gradient-end]"></span>
           On this page
         </h2>
@@ -95,8 +95,8 @@ export default function TableOfContents() {
                   ${isH3 ? "pl-8" : "pl-4"}
                   ${
                     isActive
-                      ? "text-[--text-primary] font-medium"
-                      : "text-[--text-tertiary] hover:text-[--text-primary]"
+                      ? "text-[#ccfc14] font-medium"
+                      : "text-[#ccfc14] hover:text-[#ccfc14]"
                   }
                 `}
               >

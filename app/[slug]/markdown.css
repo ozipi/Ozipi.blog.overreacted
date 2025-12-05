@@ -22,16 +22,24 @@
 
 .markdown h2 {
     @apply mt-2 pb-8 text-3xl md:text-4xl font-bold;
+    color: #ccfc14;
     scroll-margin-top: 100px;
 }
 
 .markdown h3 {
     @apply mt-2 pb-8 text-2xl md:text-3xl font-bold;
+    color: #ccfc14;
     scroll-margin-top: 100px;
 }
 
 .markdown h4 {
     @apply mt-2 pb-8 text-xl md:text-2xl font-bold;
+    color: #ccfc14;
+}
+
+.markdown strong,
+.markdown b {
+    color: #ccfc14;
 }
 
 .markdown :is(h1, h2, h3, h4) a:is(:hover, :focus, :active)::before,

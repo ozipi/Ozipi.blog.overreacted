@@ -1,5 +1,4 @@
 import Link from "./Link";
-import Color from "colorjs.io";
 import { metadata, getPosts } from "./posts";
 import { display, sans } from "./fonts";
 import TechIcons from "./components/TechIcons";
@@ -42,25 +41,14 @@ export default async function Home() {
 }
 
 function PostTitle({ post }) {
-  let accentStart = new Color("#6366f1");
-  let accentEnd = new Color("#06b6d4");
-  let accentRange = accentStart.range(accentEnd);
-  let today = new Date();
-  let timeSinceFirstPost = (today - new Date(2018, 10, 30)).valueOf();
-  let timeSinceThisPost = (today - new Date(post.date)).valueOf();
-  let staleness = timeSinceThisPost / timeSinceFirstPost;
-
   return (
     <div className="flex items-start gap-4 mb-4">
       <h2
         className={[
           display.className,
           "text-4xl sm:text-5xl font-bold leading-tight tracking-tight",
-          "text-[--accentColor] group-hover:scale-[1.01] transition-transform duration-300",
+          "text-[#ccfc14] group-hover:scale-[1.01] transition-transform duration-300",
         ].join(" ")}
-        style={{
-          "--accentColor": accentRange(staleness * 0.7).toString(),
-        }}
       >
         {post.title}
       </h2>

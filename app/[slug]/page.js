@@ -50,7 +50,7 @@ export default async function PostPage({ params }) {
         <h1
           className={[
             display.className,
-            "text-5xl sm:text-6xl font-bold leading-tight tracking-tight text-[--text-primary] mb-4",
+            "text-5xl sm:text-6xl font-bold leading-tight tracking-tight text-[#ccfc14] mb-4",
           ].join(" ")}
         >
           {data.title}

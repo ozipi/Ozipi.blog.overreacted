@@ -17,17 +17,7 @@ export default function HomeLink() {
       ].join(" ")}
     >
       <span
-        className="text-4xl font-bold tracking-tight relative"
-        style={{
-          "--myColor1": isActive ? "var(--text-primary)" : "var(--accent-gradient-start)",
-          "--myColor2": isActive ? "var(--text-primary)" : "var(--accent-gradient-end)",
-          backgroundImage:
-            "linear-gradient(135deg, var(--myColor1), var(--myColor2))",
-          backgroundClip: "text",
-          WebkitBackgroundClip: "text",
-          color: "transparent",
-          transition: "--myColor1 0.3s ease-out, --myColor2 0.3s ease-in-out",
-        }}
+        className="text-4xl font-bold tracking-tight relative text-[#ccfc14]"
       >
         ozipi.dev
       </span>

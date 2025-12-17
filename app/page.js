@@ -29,7 +29,7 @@ function MatrixRain() {
     canvas.height = window.innerHeight;
 
     const chars = "01אבגדהוזחטיכלמנסעפצקרשת";
-    const fontSize = 14;
+    const fontSize = 20;
     const columns = canvas.width / fontSize;
     const drops = Array(Math.floor(columns)).fill(1);
 

@@ -20,7 +20,7 @@
     "colorjs.io": "^0.4.5",
     "feed": "^4.2.2",
     "gray-matter": "^4.0.3",
-    "next": "15.6.0-canary.58",
+    "next": "^15.5.7",
     "next-mdx-remote-client": "^2.1.1",
     "overnight": "^1.8.0",
     "react": "^19.2.3",
@@ -46,6 +46,6 @@
     "typescript": "5.9.2"
   },
   "overrides": {
-    "next": "15.4.0-canary.23"
+    "next": "^15.5.7"
   }
 }

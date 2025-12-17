@@ -1,7 +1,7 @@
 import { Analytics } from "@vercel/analytics/react";
 import Link from "./Link";
 import HomeLink from "./HomeLink";
-import { serif, sans, display } from "./fonts";
+import { serif, sans, display, mono } from "./fonts";
 import "./global.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import ProgressBars from "./components/ProgressBars";
@@ -15,7 +15,7 @@ const Activity = Symbol.for("react.activity");
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable} ${display.variable}`}>
+    <html lang="en" className={`${serif.variable} ${sans.variable} ${display.variable} ${mono.variable}`}>
       <head>
         <Script
           async

@@ -52,10 +52,11 @@
 
 .markdown :not(pre) > code {
     border-radius: 10px;
-    background: var(--inlineCode-bg);
-    color: var(--inlineCode-text);
+    background: rgba(255, 215, 0, 0.2);
+    color: #FFD700;
     padding: 0.15em 0.2em 0.05em;
     white-space: normal;
+    border: 1px solid rgba(255, 215, 0, 0.3);
 }
 
 .markdown pre {
@@ -182,8 +183,8 @@
     margin-left: -16px;
     margin-right: -16px;
     padding-left: 12px;
-    border-left: 4px solid #ffa7c4;
-    background-color: #022a4b;
+    border-left: 4px solid #FFD700;
+    background-color: rgba(255, 215, 0, 0.1);
     display: block;
     padding-right: 1em;
 }

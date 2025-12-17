@@ -1,4 +1,4 @@
-import { Antonio, Inter, Space_Grotesk } from "next/font/google";
+import { Antonio, Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 
 export const display = Antonio({
   subsets: ["latin"],
@@ -22,4 +22,12 @@ export const serif = Space_Grotesk({
   weight: ["400", "500", "600", "700"],
   style: ["normal"],
   variable: "--font-serif",
+});
+
+export const mono = JetBrains_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
+  style: ["normal"],
+  variable: "--font-mono",
 });

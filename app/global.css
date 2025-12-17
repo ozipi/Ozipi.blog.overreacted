@@ -90,12 +90,103 @@
     }
 }
 
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+@keyframes scan {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes glitch {
+    0%, 100% {
+        transform: translate(0);
+    }
+    10% {
+        transform: translate(-2px, 2px);
+    }
+    20% {
+        transform: translate(2px, -2px);
+    }
+    30% {
+        transform: translate(-2px, -2px);
+    }
+    40% {
+        transform: translate(2px, 2px);
+    }
+    50% {
+        transform: translate(-2px, 2px);
+    }
+    60% {
+        transform: translate(2px, -2px);
+    }
+    70% {
+        transform: translate(-2px, -2px);
+    }
+    80% {
+        transform: translate(2px, 2px);
+    }
+    90% {
+        transform: translate(-2px, -2px);
+    }
+}
+
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: var(--bg-primary);
     position: relative;
     overflow-x: hidden;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::selection {
+    background: #ccfc14;
+    color: #000;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a0f;
+    border-left: 2px solid #ccfc14;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccfc14;
+    border: 2px solid #0a0a0f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00ffff;
+}
+
+/* Radial gradient utility */
+.bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+}
+
+/* Perspective utility */
+.perspective-1000 {
+    perspective: 1000px;
 }
 
 /* Subtle grain texture overlay */

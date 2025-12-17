@@ -13,13 +13,22 @@ import overnight from "overnight/themes/Overnight-Slumber.json";
 import "./markdown.css";
 import remarkGfm from "remark-gfm";
 import TableOfContents from "./TableOfContents";
+import { notFound } from "next/navigation";
 
 overnight.colors["editor.background"] = "var(--code-bg)";
+
+export const dynamicParams = false;
 
 export default async function PostPage({ params }) {
   const { slug } = await params;
   const filename = "./public/" + slug + "/index.md";
-  const file = await readFile(filename, "utf8");
+  let file;
+  try {
+    file = await readFile(filename, "utf8");
+  } catch (e) {
+    // File doesn't exist, trigger 404
+    notFound();
+  }
   let postComponents = {};
   try {
     postComponents = await import("../../public/" + slug + "/components.js");

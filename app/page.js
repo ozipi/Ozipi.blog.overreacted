@@ -124,7 +124,7 @@ function Hero() {
         <div className={`${mono.className} text-[#ccfc14] text-xs mb-8 overflow-hidden`}>
           <pre className="opacity-40">
 {`╔═══════════════════════════════════════════════════════════════════════════════╗
-║ SYSTEM ONLINE :: NEURAL NETWORK ACTIVE :: SECURITY: COMPROMISED              ║
+║ SYSTEM ONLINE :: NEURAL NETWORK ACTIVE :: SECURITY: COMPROMISED               ║
 ╚═══════════════════════════════════════════════════════════════════════════════╝`}
           </pre>
         </div>
